@@ -3,7 +3,7 @@
 
 관련 링크
 1) erd cloud : https://www.erdcloud.com/d/Hi6fywp7ksT8RPbiX
-2) github + 
+2) github : https://github.com/TaeHyeun8689/DeitWebService/tree/main
 
 목표
 
