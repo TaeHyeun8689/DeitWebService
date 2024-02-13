@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper	namespace="com.springproj.dietwebservice.repository.IFoodInputDAO">
+
+    <insert id="insertfood" parameterType="com.springproj.dietwebservice.domain.FoodInputVO">
+        INSERT INTO foodinput (food_name, member_id, food_gram, food_kcal, food_totalkcal, food_inputdate, food_day)
+        VALUES (#{food_name}, #{member_id}, #{food_gram}, #{food_kcal}, #{food_totalkcal}, #{food_inputdate}, #{food_day})
+    </insert>
+    
+    <select id="selectfood" parameterType="String" resultType="com.springproj.dietwebservice.domain.FoodInputVO">
+        SELECT * FROM foodinput WHERE member_id = #{memberId} AND TO_DATE(TO_CHAR(food_inputdate, 'YYYY-MM-DD'), 'YYYY-MM-DD') = TO_DATE(TO_CHAR(SYSDATE, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+    </select>
+
+</mapper>
