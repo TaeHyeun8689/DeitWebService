@@ -11,14 +11,14 @@
 
 사용기술 & 툴
 
-Spring boot 4.0
-java17
-jsp
-java script
-html/css
-ajax
-OracleDB
-Mybatis
+Spring boot 4.0 / 
+java17 / 
+jsp / 
+java script / 
+html/css / 
+ajax / 
+OracleDB / 
+Mybatis / 
 erd cloud
 
 
